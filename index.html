@@ -8,54 +8,92 @@
     <title>HM Building.cz s.r.o </title>
 </head>
 <body>
-    <div class="nav">
-        <a href="#"><img class="nav--logo" src="./media/logo.png" alt="logo"></a>
-        <div class="nav-hamburger-menu">
-            <div class="nav-hamburger-text">MENU</div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
-        </div>
-    </div>
-    <div class="nav--open">
-
-    </div>
-    <div class="header">
+    <header class="main-header">
+        <nav class="nav">
+            <a href="#"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
+            <div class="nav-hamburger-menu">
+                <div class="hamburger-menu"><a href="javascript:void(0)">MENU</a></div>
+                <div class="nav-hamburger-line"></div>
+                <div class="nav-hamburger-line"></div>
+                <div class="nav-hamburger-line"></div>
+            </div>
+            <menu class="nav__menu hamburger-menu-list nav__menu--hidden">
+                <li class="nav-item">
+                    <a class=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class=""></a>
+                </li>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list")
+                    for (const menu of menus) {
+                        menu.classList.toggle(".nav__menu--hidden")
+                    }
+                }
+            }
+        </script>
         <div class="title">
-            <div class="text-1">HM Building.cz s.r.o</div>
+            <h1>HM Building.cz s.r.o</h1>
             <div>liberecká stavební společnost</div>
         </div>
-    </div>
+    </header>>
     <div class="main">
         <h2>Využijte škálu našich služeb</h2>
-        <div class="text">Ačkoliv provádíme především průmyslové stavby, není pro nás problém postavit Vám rodinný domek na klíč, nebo jen hrubou stavbu. Nejsou nám cizí ani rekonstrukce budov a jejich údržba a to v četně okolních ploch.</div>
+        <p>Ačkoliv provádíme především průmyslové stavby, není pro nás problém postavit Vám rodinný domek na klíč, nebo jen hrubou stavbu. Nejsou nám cizí ani rekonstrukce budov a jejich údržba a to v četně okolních ploch.</p>
     </div>
     <div class="služby">
-        <img class="img img--right" src="./media/sluzba-novostavby-1200w.jpg" alt="novostavby">
-        <div class="služby__text">
-            <h2>Novostavby</h2>
-            <div class="text">Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</div>
-            <div class="text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</div>
-            <div class="služby--button text">Zobrazit více</div>
-        </div>
-        <img class="img img--left" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="Průmyslové stavby">
-        <div class="služby__text">
-            <h2>Průmyslové stavby</h2>
-            <div class="text">Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</div>
-            <div class="služby--button text">Zobrazit více</div>
-        </div>
-        <img class="img img--right" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="Rekonstrukce domů a jiných staveb">
-        <div class="služby__text">
-            <h2>Rekonstrukce domů a jiných staveb<h2>
-            <div class="text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb.</div>
-            <div class="služby--button text">Zobrazit více</div>
-        </div>
-        <img class="img img--left" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevněné plochy">
-        <div class="služby__text">
-            <h2>Komunikace a zpevněné plochy</h2>
-            <div class="text">Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvicejících objektů, jako jsou odvodění, zpevnění svahů, opěrné zdi atd.</div>
-            <div class="služby--button text">Zobrazit více</div>
-        </div>
+        <article>
+            <div class="služby__text">
+                <h2>Novostavby</h2>
+                <p>Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
+                <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+                <a href="#" class="služby--button">Zobrazit více</a>
+            </div>
+            <aside>
+                <img class="img img--right" src="./media/sluzba-novostavby-1200w.jpg" alt="novostavby">
+            </aside>
+        </article>
+        <article>
+            <div class="služby__text">
+                <h2>Průmyslové stavby</h2>
+                <p>Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</div>
+                <a href="#" class="služby--button">Zobrazit více</a>
+            </div>
+            <aside>
+                <img class="img img--left" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="Průmyslové stavby">
+            </aside>
+        </article>
+        <article>
+            <div class="služby__text">
+                <h2>Rekonstrukce domů a jiných staveb<h2>
+                <p>Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb.</p>
+                <a href="#" class="služby--button">Zobrazit více</a>
+            </div>
+            <aside>
+                <img class="img img--right" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="Rekonstrukce domů a jiných staveb">
+            </aside>
+        </article>
+        <article>
+            <div class="služby__text">
+                <h2>Komunikace a zpevněné plochy</h2>
+                <p>Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvicejících objektů, jako jsou odvodění, zpevnění svahů, opěrné zdi atd.</p>
+                <a href="#" class="služby--button text">Zobrazit více</a>
+            </div>
+            <aside>
+                <img class="img img--left" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevněné plochy">
+            </aside>
+        </article>
     </div>
     <div class="důvěra text text--white">
         <div>Naše firma nabízí své služby ve stavebnictví od roku 2015.</div>
@@ -64,7 +102,7 @@
     </div>
     <div class="reference">
         <h2>Rádi vám ukážeme naše reference</h2>
-        <div class="text">Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obánit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme</div>
+        <p>Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obánit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme</p>
         <img class="reference--img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg">
         <h3>Hasičská zbrojnice</h3>
         <div class="reference--text">celková rekostrukce</div>
@@ -78,7 +116,7 @@
     <div class="footer">
         <div class="title">
             <h2>Plácneme si pro váš projekt?</h2>
-            <div>Nezávazně nás kontaktujte a domluvme vše potřebné</div>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
             <a href="kontakt.html" class="button">Nezávazně poptat</a>
         </div>
     </div>
