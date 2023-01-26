@@ -29,7 +29,7 @@ body {
     height: 44px;
 }
 
-.nav-hamburger-menu {
+.menu {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -160,10 +160,14 @@ b {
     align-items: center;
 }
 
-.hamburger-menu-list {
+menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    list-style: none;
+    gap: 5px;
     background-color: var(--primary);
-    padding: 10px;
+}
+
+.nav__item a {
+    color: var(--bg);
 }

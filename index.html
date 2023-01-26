@@ -6,46 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <title>HM Building.cz s.r.o </title>
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <header class="main-header">
         <nav class="nav">
             <a href="#"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
-            <div class="nav-hamburger-menu">
-                <div class="hamburger-menu"><a href="javascript:void(0)">MENU</a></div>
-                <div class="nav-hamburger-line"></div>
-                <div class="nav-hamburger-line"></div>
-                <div class="nav-hamburger-line"></div>
+            <div class="menu">
+                    <div>MENU</div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
             </div>
-            <menu class="nav__menu hamburger-menu-list nav__menu--hidden">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">DOMŮ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">SLUŽBY</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">REFERENCE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">O NÁS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">KONTAKT</a>
-                </li>
+            <menu>
+                <li class="nav__item nav__item--active"><a href="#">DOMŮ</a></li>
+                <li class="nav__item"><a href="#">SLUŽBY</a></li>
+                <li class="nav__item"><a href="#">REFERENCE</a></li>
+                <li class="nav__item"><a href="#">O NÁS</a></li>
+                <li class="nav__item"><a href="#">KONTAKT</a></li>
             </menu>
         </nav>
-        <script>
-            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-            for (const btn of hamburgerButtons) {
-                btn.onclick = (event) => {
-                    const menus = document.querySelectorAll(".hamburger-menu-list")
-                    for (const menu of menus) {
-                        menu.classList.toggle(".nav__menu--hidden")
-                    }
-                }
-            }
-        </script>
         <div class="title">
             <h1>HM Building.cz s.r.o</h1>
             <div>liberecká stavební společnost</div>
