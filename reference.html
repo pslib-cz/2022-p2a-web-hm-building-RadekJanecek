@@ -1,39 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <title>HM Building.cz s.r.o </title>
 </head>
 <body>
-    <div class="nav">
-        <a href="index.html"><img class="nav--logo" src="./media/logo.png" alt="logo"></a>
-        <div class="nav-hamburger-menu">
-            <div class="nav-hamburger-text">MENU</div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
-        </div>
-    </div>
-    <div class="reference">
-        <h2>Rádi vám ukážeme naše reference</h2>
-        <div class="text">Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obánit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme</div>
-        <img class="reference--img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg">
-        <h3>Hasičská zbrojnice</h3>
-        <div class="reference--text">celková rekostrukce</div>
-        <a><img class="reference--img" src="./media/reference/reference-pradelna-600w.jpg"></a>
-        <h3>Samoobslužná prádelna</h3>
-        <div class="reference--text">stavební úpravy a opravy</div>
-        <img class="reference--img" src="./media/reference/reference-plocha-600w.jpg">
-        <h3>Hasičská zbrojnice</h3>
-        <div class="reference--text">celková rekostrukce</div>
-    </div>
-    <div class="footer">
+    <header class="main-header">
+        <nav class="nav">
+            <a href="index.html"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
+            <div class="menu">
+                    <div>MENU</div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
+            </div>
+            <menu>
+                <li class="nav__item nav__item--active"><a href="index.html">DOMŮ</a></li>
+                <li class="nav__item"><a href="./index.html#služby">SLUŽBY</a></li>
+                <li class="nav__item"><a href="reference.html">REFERENCE</a></li>
+                <li class="nav__item"><a href="o nás.html">O NÁS</a></li>
+                <li class="nav__item"><a href="kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
         <div class="title">
-            <h2>Plácneme si pro váš projekt?</h2>
-            <div>Nezávazně nás kontaktujte a domluvme vše potřebné</div>
-            <a href="kontakt.html" class="button">Nezávazně poptat</a>
+            <h1>HM Building.cz s.r.o</h1>
+            <div>liberecká stavební společnost</div>
         </div>
+    </header>
+    <div class="reference"> 
+        <h2>Rádi vám ukážeme naše reference</h2>
+        <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví.</strong> To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti,</strong> na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme</p>
+        <img class="img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg"> 
+        <h3>Hasičská zbrojnice</h3> 
+        <p>celková rekostrukce</p> 
+        <a><img class="img" src="./media/reference/reference-pradelna-600w.jpg"></a> 
+        <h3>Samoobslužná prádelna</h3> 
+        <p>stavební úpravy a opravy</p> 
+        <img class="img" src="./media/reference/reference-plocha-600w.jpg"> 
+        <h3>Hasičská zbrojnice</h3> 
+        <p>celková rekostrukce<p> 
     </div>
+    <footer class="footer">
+            <h2>Plácneme si pro váš projekt?</h2>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
+            <a href="kontakt.html" class="button">Nezávazně poptat</a>
+    </footer>
 </body>
 </html>
