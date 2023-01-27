@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <title>HM Building.cz s.r.o </title>
-    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <header class="main-header">
         <nav class="nav">
-            <a href="#"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
             <div class="menu">
                     <div>MENU</div>
                     <div class="nav-hamburger-line"></div>
@@ -19,11 +19,11 @@
                     <div class="nav-hamburger-line"></div>
             </div>
             <menu>
-                <li class="nav__item nav__item--active"><a href="#">DOMŮ</a></li>
-                <li class="nav__item"><a href="#">SLUŽBY</a></li>
-                <li class="nav__item"><a href="#">REFERENCE</a></li>
-                <li class="nav__item"><a href="#">O NÁS</a></li>
-                <li class="nav__item"><a href="#">KONTAKT</a></li>
+                <li class="nav__item nav__item--active"><a href="index.html">DOMŮ</a></li>
+                <li class="nav__item"><a href="./index.html#služby">SLUŽBY</a></li>
+                <li class="nav__item"><a href="reference.html">REFERENCE</a></li>
+                <li class="nav__item"><a href="o nás.html">O NÁS</a></li>
+                <li class="nav__item"><a href="kontakt.html">KONTAKT</a></li>
             </menu>
         </nav>
         <div class="title">
@@ -35,7 +35,7 @@
         <h2>Využijte škálu našich <b>služeb</b></h2>
         <p>Ačkoliv provádíme především <strong>půmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to v četně okolních ploch.</p>
     </div>
-    <div class="služby">
+    <div class="služby" id="služby">
         <article>
             <div class="služby__text">
                 <h2>Novostavby</h2>
@@ -71,7 +71,7 @@
             <div class="služby__text">
                 <h2>Komunikace a zpevněné plochy</h2>
                 <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací, konstrukcí podkladních</strong> a souvicejících objektů, jako jsou <strong>odvodění, zpevnění svahů, opěrné zdi</strong> atd.</p>
-                <a href="#" class="služby--button text">Zobrazit více</a>
+                <a href="#" class="služby--button">Zobrazit více</a>
             </div>
             <aside>
                 <img class="img img--left" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevněné plochy">
