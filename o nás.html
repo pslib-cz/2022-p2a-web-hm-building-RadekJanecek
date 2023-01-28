@@ -1,27 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>HM Building.cz s.r.o </title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="icon" href="./media/logo.png">
+    <script src="./scripts/main.js"></script>
+    <title>HM Building.cz | DOMŮ </title>
 </head>
 <body>
-    <div class="nav">
-        <a href="index.html"><img class="nav--logo" src="./media/logo.png" alt="logo"></a>
-        <div class="nav-hamburger-menu">
-            <div class="nav-hamburger-text">MENU</div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
-            <div class="nav-hamburger-line"></div>
+        <nav class="nav">
+            <a href="./"><img class="nav__logo" src="./media/logo.png" alt="logo"></a>
+            <div class="menu">
+                    <div>MENU</div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
+                    <div class="nav-hamburger-line"></div>
+            </div>
+            <menu>
+                <li class="nav__item"><a href="index.html">DOMŮ</a></li>
+                <li class="nav__item"><a href="./index.html#služby">SLUŽBY</a></li>
+                <li class="nav__item"><a href="reference.html">REFERENCE</a></li>
+                <li class="nav__item nav__item--active"><a href="o nás.html">O NÁS</a></li>
+                <li class="nav__item"><a href="kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
+        <div class="o-nás__main">
+            <h1>O nás</h1>
+            <p>Společnost <strong>HM Building.cz s.r.o</strong> nabízí své <strong>služby ve stavebnictví od roku 2015</strong>, a to převážně <strong>po Libereckém kraji.</strong></p>
+            <p>V oboru pozemního stavitelství <strong>provádíme stavbu a rekonstrukci:</strong></p>
+            <ul>
+                <li class="marker--orange">průmyslových staveb</li>
+                <li class="marker--orange">obytných staveb</li>
+                <li class="marker--orange">staveb občanské vybavenosti</li>
+                <li class="marker--orange">komunikací vozidlových, ale i pěších</li>
+            </ul>
+            <p>Zakázky můžeme řešit tzv. <strong>na klíč</strong>, kde jsme schopni zajistit dodávky a montáž elektro-instalace NN a VN, zdravotně technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
+            <p>Naše firma taktéž zajišťuje <strong>projekční služby a služby týkající se statického posouzení staveb</strong> v oboru pozemního stavitelství a dále jsme schopni zajistit <strong>investorsko-inženýrské služby</strong>.</p>
+            <p><strong>Záruční doba</strong> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
         </div>
-    </div>
-
-    <div class="footer">
-        <div class="title">
+    <footer class="footer">
             <h2>Plácneme si pro váš projekt?</h2>
-            <div>Nezávazně nás kontaktujte a domluvme vše potřebné</div>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
             <a href="kontakt.html" class="button">Nezávazně poptat</a>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
