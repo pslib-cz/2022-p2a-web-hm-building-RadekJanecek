@@ -48,11 +48,6 @@ p {
     justify-content: space-between;
 }
 
-.header--invisible {
-    background: none;
-    height: auto;
-}
-
 .text--center {
     text-align: center;
 }
@@ -61,6 +56,14 @@ p {
     font-weight: 300;
     display: block;
     font-size: 15px;
+}
+
+.text--white {
+    color: var(--bg);
+}
+
+.text--decoration {
+    text-decoration: none;
 }
 
 .nav-hamburger-line {
@@ -136,14 +139,6 @@ p {
     background-position: center;
     background-size: cover;
     align-items: flex-start;
-}
-
-.text--white {
-    color: var(--bg);
-}
-
-.text--decoration {
-    text-decoration: none;
 }
 
 .reference {
@@ -227,10 +222,15 @@ menu::before {
     background-color: var(--bg);
 }
 
-
-
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .header--invisible {
-        background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../media/pageheader-1920w.jpg);;
+        background: none;
+        height: auto;
+    }
+    .text--invisible {
+        display: none;
+    }
+    .button--invisible {
+        display: none;
     }
 }
