@@ -5,6 +5,7 @@ html {
     --bg: #FFFFFF;
     --text--gray: #888888;
     color: var(--text);
+    scroll-behavior: smooth;
 }
 body {
     max-width: 1920px;
