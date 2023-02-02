@@ -151,6 +151,9 @@
         right: 0;
         bottom: 0;
     }
+    .sluzby__detail {
+        margin: 170px 170px;
+    }
     .about {
         margin-top: 15vh;
         margin-bottom: 15vh;
