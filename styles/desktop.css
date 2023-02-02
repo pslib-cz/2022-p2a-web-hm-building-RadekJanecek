@@ -64,10 +64,10 @@
         height: 100px;
     }
     .sluzby__article {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     .sluzby__article:nth-child(odd) {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     .sluzby__article__aside {
@@ -137,6 +137,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .sluzby {
+        max-width: 1280px;
+        margin: 0 auto;
     }
     .duvera {
         height: 25vh;
