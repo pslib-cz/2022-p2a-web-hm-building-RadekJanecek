@@ -59,6 +59,9 @@
     .header__body {
         height: 100vh;
     }
+    .text--header {
+        font-size: 0.5em;
+    }
 
     .header--invisible {
         height: 100px;
@@ -167,48 +170,5 @@
     }
     .center {
         text-align: center;
-    }
-    .hz-last {
-        grid-row: span 0 / -1;
-        grid-column: span 0 / -1;
-    }
-    .hz-16 {
-        grid-column: 1;
-        grid-row: 5 / span 3;
-    }
-    .hz-11 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .hz-12 {
-        grid-column: 3;
-        grid-row: 1;
-    }
-    .hz-9 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    .hz-14 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .hz-10 {
-        grid-column: 3;
-        grid-row: 3;
-    }
-    .hz-17 {
-        grid-column: 2;
-        grid-row: 5;
-    }
-    .hz-15 {
-        grid-column: 2;
-        grid-row: 4;
-    }
-    .hz-1 {
-        grid-column: 3;
-        grid-row: 6;
-    }
-    .pr-4 {
-        align-self: flex-end;
     }
 }

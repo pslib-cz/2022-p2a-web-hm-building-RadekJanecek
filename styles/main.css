@@ -11,6 +11,9 @@ body {
     max-width: 1920px;
     margin: 0;
 }
+a {
+    display: inline-block;
+}
 p {
     color: var(--text);
 }
@@ -63,7 +66,7 @@ p {
 .text--header {
     font-weight: 300;
     display: block;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .text--white {
@@ -78,12 +81,6 @@ p {
     width: 46px;
     height: 8px;
     background-image: linear-gradient(90deg, var(--primary), #FFBE9A);
-}
-
-.nav-hamburger-text {
-    font-family: sans-serif;
-    color: var(--text--gray);
-    font-size: 12px;
 }
 
 .footer {
@@ -119,7 +116,6 @@ p {
     flex-direction: column;
 }
 .reference-button {
-    width: 100%;
     margin-top: 20px;
     text-align: center;
 }
@@ -233,6 +229,7 @@ menu.active::before {
     align-items: center;
     gap: 10px;
     margin: 10px 0;
+    text-decoration: none;
 }
 
 .icon {
@@ -246,7 +243,6 @@ menu.active::before {
 }
 
 .form__item {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px 0;
